@@ -266,29 +266,27 @@
         </p>
       </div>
 
-      <!-- Working contact form via Web3Forms -->
-      <form
-        class="form"
-        id="contactForm"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-        
-        <input type="hidden" name="access_key" value="d861d4f7-2193-4d1e-a757-f1b3c7632093" />
-        <input type="hidden" name="subject" value="New message from portfolio site" />
-        <input type="hidden" name="from_name" value="Portfolio Contact Form" />
-        <!-- Optional redirect after success -->
-        <input type="hidden" name="redirect" value="anandaperumal-portfolio.vercel.app" />
+     <form
+  class="form"
+  id="contactForm"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+  <input type="hidden" name="access_key" value="d861d4f7-2193-4d1e-a757-f1b3c7632093" />
+  <input type="hidden" name="subject" value="New message from portfolio site" />
+  <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+  <input type="hidden" name="redirect" value="https://anandaperumal-portfolio.vercel.app" />
 
-        <input name="name" placeholder="Your name" required />
-        <input name="email" type="email" placeholder="Email" required />
-        <input name="subject_line" placeholder="Subject" />
-        <textarea name="message" rows="4" placeholder="Message" required></textarea>
-        <div style="display:flex;justify-content:flex-end;margin-top:10px">
-          <button class="btn-primary" type="submit">Send Message</button>
-        </div>
-        <div id="formStatus" class="muted" aria-live="polite" style="margin-top:6px;font-size:13px;"></div>
-      </form>
+  <input name="name" placeholder="Your name" required />
+  <input name="email" type="email" placeholder="Email" required />
+  <input name="subject_line" placeholder="Subject" />
+  <textarea name="message" rows="4" placeholder="Message" required></textarea>
+  <div style="display:flex;justify-content:flex-end;margin-top:10px">
+    <button class="btn-primary" type="submit">Send Message</button>
+  </div>
+  <div id="formStatus" class="muted" aria-live="polite" style="margin-top:6px;font-size:13px;"></div>
+</form>
+
     </section>
   </main>
 
