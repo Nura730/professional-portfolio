@@ -261,9 +261,6 @@
           Location: India
         </p>
         <p style="margin-top:12px;color:var(--muted)">I respond to emails promptly — use the contact form to send a message directly.</p>
-        <p style="margin-top:8px;color:var(--muted);font-size:13px">
-          This form uses a static-site email service (Web3Forms) so messages go directly to my inbox without any custom backend.[web:41][web:65][web:71]
-        </p>
       </div>
 
      <form
@@ -326,18 +323,17 @@
         gsap.from(el, {y:30, autoAlpha:0, duration:0.9, ease:'power2.out', scrollTrigger:{trigger:el, start:'top 85%'}});
       });
     })();
-
-    // Resume button -> real download/open
+    
     (function(){
       const btn = document.getElementById('openResume');
       if (!btn) return;
       btn.addEventListener('click', function(){
-        // Place your resume file in the same folder, or use a full URL
-        window.open('asset/ANANDAPERUMAL S.pdf', '_blank'); // change to your actual file name or link[web:60][web:78]
+        
+        window.open('asset/ANANDAPERUMAL S.pdf', '_blank'); 
       });
     })();
 
-    // Hire / Contact scroll
+  
     (function(){
       const btn = document.getElementById('hireBtn');
       const contact = document.getElementById('contact');
@@ -347,17 +343,17 @@
       });
     })();
 
-    // Contact form status text (Web3Forms handles sending)
+  
     (function(){
       const form = document.getElementById('contactForm');
       const status = document.getElementById('formStatus');
       if (!form || !status) return;
       form.addEventListener('submit', function(){
-        status.textContent = 'Sending message...';
+        status.textContent = '';
       });
     })();
 
-    // small nav enter
+    
     gsap.from('nav', {y:-30, autoAlpha:0, duration:0.8});
 
     // footer year
