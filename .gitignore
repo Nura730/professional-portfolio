@@ -1,0 +1,6 @@
+
+Aadharcard.pdf
+
+*.key
+.env
+.env.*
